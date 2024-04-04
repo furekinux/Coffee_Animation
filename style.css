@@ -1,1 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html{
+    width: 100%;
+    background: linear-gradient(0.25turn, #D9D9D9 50%,#060606 50%);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgback{
+    transform:rotate();
+    height: 30em;
+    -webkit-filter: drop-shadow(0em -1em 0.6em #00000098);
+}
