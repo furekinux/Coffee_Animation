@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html{
-    width: 100%;
-    background: linear-gradient(0.25turn, #D9D9D9 50%,#060606 50%);
+    background: linear-gradient(0.25turn, #D9D9D9 50%,#060606 50%) no-repeat;
     padding: 0;
     margin: 0;
-    height: 100%;
-}
-
-body{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -17,8 +12,89 @@ body{
     justify-content: center;
     align-items: center;
 }
-.imgback{
-    transform:rotate();
-    height: 30em;
-    -webkit-filter: drop-shadow(0em -1em 0.6em #00000098);
+
+body{
+    padding: 0;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cir1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #c9beb9;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 28em;
+    width: 28em;
+    filter: drop-shadow(0.5em -2em 0.3em #00000098);
+}
+
+.cir2{
+    z-index: 2;
+    position: fixed;
+    background-color: #af9c95;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 25em;
+    width: 25em;
+    filter: drop-shadow(0em -1em 0.4em #b9a49a);
+}
+
+.cir3{
+    position:absolute;
+    top: 1em;
+    z-index: 1;
+    background-color: #ebded8;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 25.5em;
+    width: 25em;
+    filter: drop-shadow(0em 0em 0.4em #f7eae4);
+}
+
+.cir4{
+    position:absolute;
+    top: 1em;
+    z-index: 2;
+    background-color: #ebded8;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 26.5em;
+    width: 26em;
+    filter: drop-shadow(0em 0em 0.4em #f7eae4);
+}
+
+.tria1{
+    padding: 2em;
+    margin: 2em;
+    z-index: 1;
+    width: 0; 
+    height: 0; 
+    border-left: 3em solid transparent;
+    border-right: 3em solid transparent;
+    border-bottom: 28em solid #D9D9D9;
+    animation: shine 1s;
+}
+
+@keyframes shine{
+    0%{
+        transform: rotate(100deg);
+    }
+
+    100%{
+        transform: rotate(10deg);}
 }
