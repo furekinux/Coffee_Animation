@@ -31,23 +31,38 @@ body{
     padding: 0;
     margin: 0;
     overflow: hidden;
-    background-color: #c9beb9;
+    background-color: #dfdad9;
     border-radius: 15em;
     margin: 0;
     padding: 0;
     height: 28em;
     width: 28em;
     filter: drop-shadow(0.5em -2em 0em #00000034);
+    border: solid 0.2em #aa968a;
 }
 .cir2{
     z-index: 2;
     position: fixed;
-    background-color: #af9c95;
+    background-color: #c7bdb9;
     border-radius: 15em;
     margin: 0;
     padding: 0;
     height: 25em;
     width: 25em;
+}
+.cir3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+    position: fixed;
+    background-color: #8a4f3d;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 15.7em;
+    width: 15.7em;
 }
 
 .cir4{
@@ -57,24 +72,70 @@ body{
     overflow: hidden;
     z-index: 3;
     position: fixed;
-    background-color: #bbaea7;
+    background-color: #dfdad9;
     border-radius: 15em;
     margin: 0;
     padding: 0;
     height: 20em;
     width: 20em;
-    filter: drop-shadow(0em -1em 0em #836c62b2);
+    filter: drop-shadow(0em -1em 0em #b89e94b2);
+    border: solid 0.2em #aa968a;
+
 }
 .cir5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     z-index: 3;
     position: fixed;
-    background-color: #a89189;
+    background-color: #bdada8;
     border-radius: 15em;
     margin: 0;
     padding: 0;
-    height: 18em;
-    width: 18em;
+    height: 17em;
+    width: 17em;
+    border: solid 0.2em #ac968a;
 
+}
+.cir6{
+    opacity: 0%;
+    z-index: 5;
+    position: fixed;
+    background-color: #774130;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 10em;
+    width: 10em;
+    animation: drop 3s 2.5s;
+}
+
+@keyframes drop {
+    0%{
+        opacity: 100%;
+        transform: scale(300%);
+    }
+    17%{
+        opacity: 100%;
+        transform: scale(30%);
+        background-color: transparent;
+    }
+    60%{
+        transform: scale(110%);
+        background-color: transparent;
+        border: solid 1em #c96f54;
+        opacity: 100%;
+    }
+    65%{
+        transform: scale(130%);
+        background-color: transparent;
+        border: solid 1em #c96f54;
+        opacity: 100%;
+    }
+    100%{
+        transform: scale(130%);
+    }
 }
 
 .tria1{
@@ -87,8 +148,8 @@ body{
     height: 0; 
     border-left: 0.1em solid transparent;
     border-right: 0.1em solid transparent;
-    border-bottom: 28em solid #D9D9D9;
-    animation: shine 1.2s ease-out;
+    border-bottom: 28em solid #ffffff;
+    animation: shine 1.5s ease-out;
 }
 .tria2{
     rotate: 5deg;
@@ -100,8 +161,8 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 20em solid #D9D9D9;
-    animation: shine 1.2s ease-out;
+    border-bottom: 20em solid #ffffff;
+    animation: shine 1.5s ease-out;
 }
 
 .tria3{
@@ -114,8 +175,8 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 26em solid #D9D9D9;
-    animation: shine 1.3s ease-out;
+    border-bottom: 26em solid #ffffff;
+    animation: shine 1.5s ease-out;
 }
 .tria4{
     rotate: 33deg;
@@ -127,8 +188,8 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 20em solid #D9D9D9;
-    animation: shine 1.3s ease-out;
+    border-bottom: 20em solid #ffffff;
+    animation: shine 1.5s ease-out;
 
 }
 
@@ -143,7 +204,7 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 26em solid #9c897d;
+    border-bottom: 26em solid #cfc3bc;
     animation: shine 1.5s ease-out;
 }
 .tria6{
@@ -156,15 +217,16 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 20em solid #9c897d;
+    border-bottom: 20em solid #cfc3bc;
     animation: shine 1.5s ease-out;
 }
+
 
 @keyframes shine{
     0%{
         transform: rotate(280deg);
     }
-    10%{
+    8%{
         transform: rotate(180deg);
     }
     100%{
