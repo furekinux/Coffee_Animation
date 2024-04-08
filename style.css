@@ -61,10 +61,32 @@ body{
     border-radius: 15em;
     margin: 0;
     padding: 0;
-    height: 15.7em;
-    width: 15.7em;
+    height: 15.5em;
+    width: 15.5em;
 }
-
+/*-----------------*/
+.ear{
+    rotate: 90deg;
+    position: fixed;
+    z-index: 3;
+    background: #dfdad9;
+    width: 4em;
+    height: 13em;
+    margin-bottom: 13em;
+    border-radius: 1.5em;
+    border: solid #aa968a;
+    animation: ear 1.7s ease-out;
+    transform-origin:bottom;
+}
+@keyframes ear {
+    0%{
+        transform: rotate(190deg);
+    }
+    100%{
+        
+    }
+}
+/*-----------------*/
 .cir4{
     display: flex;
     justify-content: center;
@@ -76,9 +98,25 @@ body{
     border-radius: 15em;
     margin: 0;
     padding: 0;
-    height: 20em;
-    width: 20em;
-    filter: drop-shadow(0em -1em 0em #b89e94b2);
+    height: 19.5em;
+    width: 19.5em;
+    filter: drop-shadow(0em -1em 0em #8f6d6031);
+    border: solid 0.2em #aa968a;
+
+}
+.cir4som{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+    position: fixed;
+    background-color: #dfdad9;
+    border-radius: 15em;
+    height: 19.5em;
+    width: 19.5em;
+    filter: drop-shadow(0em -1em 0em #8f6d6031);
     border: solid 0.2em #aa968a;
 
 }
@@ -98,7 +136,7 @@ body{
     border: solid 0.2em #ac968a;
 
 }
-.cir6{
+.drop1{
     opacity: 0%;
     z-index: 5;
     position: fixed;
@@ -108,33 +146,40 @@ body{
     padding: 0;
     height: 10em;
     width: 10em;
-    animation: drop 3s 2.5s;
+    animation: drop 2s 2.5s;
 }
-
+.drop2{
+    opacity: 0%;
+    z-index: 5;
+    position: fixed;
+    background-color: #774130;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 10em;
+    width: 10em;
+    animation: drop 2s 3s;
+}
 @keyframes drop {
     0%{
         opacity: 100%;
-        transform: scale(300%);
+        transform: scale(180%);
     }
-    17%{
+    35%{
         opacity: 100%;
-        transform: scale(30%);
+        transform: scale(10%);
         background-color: transparent;
     }
     60%{
-        transform: scale(110%);
-        background-color: transparent;
-        border: solid 1em #c96f54;
-        opacity: 100%;
-    }
-    65%{
         transform: scale(130%);
-        background-color: transparent;
-        border: solid 1em #c96f54;
+        border: solid 0.6em #995743;
         opacity: 100%;
     }
     100%{
-        transform: scale(130%);
+        transform: scale(120%);
+        background-color: transparent;
+        border: double 0.7em #ac624b;
+        opacity: 0%;
     }
 }
 
@@ -152,7 +197,7 @@ body{
     animation: shine 1.5s ease-out;
 }
 .tria2{
-    rotate: 5deg;
+    rotate: 9deg;
     position: fixed;
     padding: 1.5em;
     margin: 0em;
@@ -193,7 +238,6 @@ body{
 
 }
 
-
 .tria5{
     rotate: 200deg;
     position: fixed;
@@ -204,7 +248,7 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 26em solid #cfc3bc;
+    border-bottom: 26em solid #d8cbc4;
     animation: shine 1.5s ease-out;
 }
 .tria6{
@@ -217,7 +261,7 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 20em solid #cfc3bc;
+    border-bottom: 20em solid #d8cbc4;
     animation: shine 1.5s ease-out;
 }
 
