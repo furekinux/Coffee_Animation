@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html{
-    background: linear-gradient(0.25turn, #D9D9D9 50%,#060606 50%) no-repeat;
+    background: linear-gradient(0.25turn, #D9D9D9 50%,#36221c 50%) no-repeat;
     padding: 0;
     margin: 0;
     margin: 0;
@@ -11,6 +11,63 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.left{
+    position: fixed;
+    left: 5em;
+    width: 38em;
+    font-family: PT serif;
+}
+
+h1{
+    position: fixed;
+    top: 1.4em;
+    color: #47271e;
+    font-size: 6.8em;
+    text-shadow: 0.05em 0.04em #a88d82 ;
+    margin: 0;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    color: #8a4f3d;
+}
+.text{
+    position: fixed;
+    top: 22em;
+    width: 19em;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    padding: 1.2em;
+    width: 11.5em;
+    border: #36221c;
+    background: #36221c;
+    color: #D9D9D9;
+    border-radius: 3em;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.touch{
+    position: fixed;
+    top: 39em;
+}
+
+button:hover{
+    background-color: #8a4f3d;
+}
+
+#dropping{
+
+}
+
+#dropping:hover{
+    transform: scaleY(2em);
 }
 
 body{
@@ -35,8 +92,8 @@ body{
     border-radius: 15em;
     margin: 0;
     padding: 0;
-    height: 28em;
-    width: 28em;
+    height: 29em;
+    width: 29em;
     filter: drop-shadow(0.5em -2em 0em #00000034);
     border: solid 0.2em #aa968a;
 }
@@ -47,8 +104,9 @@ body{
     border-radius: 15em;
     margin: 0;
     padding: 0;
-    height: 25em;
-    width: 25em;
+    height: 26em;
+    width: 26em;
+    border: solid 0.3em #dfdad9;
 }
 .cir3{
     display: flex;
@@ -57,7 +115,7 @@ body{
     overflow: hidden;
     z-index: 3;
     position: fixed;
-    background-color: #8a4f3d;
+    background-color: #724333;
     border-radius: 15em;
     margin: 0;
     padding: 0;
@@ -133,14 +191,14 @@ body{
     padding: 0;
     height: 17em;
     width: 17em;
-    border: solid 0.2em #ac968a;
+    border: solid 0.2em #dfdad9;
 
 }
 .drop1{
     opacity: 0%;
     z-index: 5;
     position: fixed;
-    background-color: #774130;
+    background-color: #633426;
     border-radius: 15em;
     margin: 0;
     padding: 0;
@@ -152,13 +210,13 @@ body{
     opacity: 0%;
     z-index: 5;
     position: fixed;
-    background-color: #774130;
+    background-color: #633426;
     border-radius: 15em;
     margin: 0;
     padding: 0;
     height: 10em;
     width: 10em;
-    animation: drop 2s 3s;
+    animation: drop 2s 3.2s;
 }
 @keyframes drop {
     0%{
@@ -193,7 +251,7 @@ body{
     height: 0; 
     border-left: 0.1em solid transparent;
     border-right: 0.1em solid transparent;
-    border-bottom: 28em solid #ffffff;
+    border-bottom: 29em solid #ffffff;
     animation: shine 1.5s ease-out;
 }
 .tria2{
@@ -220,19 +278,19 @@ body{
     height: 0; 
     border-left: 0.5em solid transparent;
     border-right: 0.5em solid transparent;
-    border-bottom: 26em solid #ffffff;
+    border-bottom: 27.5em solid #ffffff;
     animation: shine 1.5s ease-out;
 }
 .tria4{
-    rotate: 33deg;
+    rotate: 35deg;
     position: fixed;
     padding: 1em;
     margin: 0em;
     z-index: 1;
     width: 0; 
     height: 0; 
-    border-left: 0.5em solid transparent;
-    border-right: 0.5em solid transparent;
+    border-left: 0.2em solid transparent;
+    border-right: 0.2em solid transparent;
     border-bottom: 20em solid #ffffff;
     animation: shine 1.5s ease-out;
 
