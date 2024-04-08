@@ -37,9 +37,8 @@ body{
     padding: 0;
     height: 28em;
     width: 28em;
-    filter: drop-shadow(0.5em -2em 0.3em #00000098);
+    filter: drop-shadow(0.5em -2em 0em #00000034);
 }
-
 .cir2{
     z-index: 2;
     position: fixed;
@@ -49,52 +48,125 @@ body{
     padding: 0;
     height: 25em;
     width: 25em;
-    filter: drop-shadow(0em -1em 0.4em #b9a49a);
-}
-
-.cir3{
-    position:absolute;
-    top: 1em;
-    z-index: 1;
-    background-color: #ebded8;
-    border-radius: 15em;
-    margin: 0;
-    padding: 0;
-    height: 25.5em;
-    width: 25em;
-    filter: drop-shadow(0em 0em 0.4em #f7eae4);
 }
 
 .cir4{
-    position:absolute;
-    top: 1em;
-    z-index: 2;
-    background-color: #ebded8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 3;
+    position: fixed;
+    background-color: #bbaea7;
     border-radius: 15em;
     margin: 0;
     padding: 0;
-    height: 26.5em;
-    width: 26em;
-    filter: drop-shadow(0em 0em 0.4em #f7eae4);
+    height: 20em;
+    width: 20em;
+    filter: drop-shadow(0em -1em 0em #836c62b2);
+}
+.cir5{
+    z-index: 3;
+    position: fixed;
+    background-color: #a89189;
+    border-radius: 15em;
+    margin: 0;
+    padding: 0;
+    height: 18em;
+    width: 18em;
+
 }
 
 .tria1{
-    padding: 2em;
-    margin: 2em;
+    rotate: 8deg;
+    position: fixed;
+    padding: 3em;
+    margin: 0em;
     z-index: 1;
     width: 0; 
     height: 0; 
-    border-left: 3em solid transparent;
-    border-right: 3em solid transparent;
+    border-left: 0.1em solid transparent;
+    border-right: 0.1em solid transparent;
     border-bottom: 28em solid #D9D9D9;
-    animation: shine 1s;
+    animation: shine 1.2s ease-out;
+}
+.tria2{
+    rotate: 5deg;
+    position: fixed;
+    padding: 1.5em;
+    margin: 0em;
+    z-index: 1;
+    width: 0; 
+    height: 0; 
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 20em solid #D9D9D9;
+    animation: shine 1.2s ease-out;
+}
+
+.tria3{
+    rotate: 34deg;
+    position: fixed;
+    padding: 1em;
+    margin: 0em;
+    z-index: 2;
+    width: 0; 
+    height: 0; 
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 26em solid #D9D9D9;
+    animation: shine 1.3s ease-out;
+}
+.tria4{
+    rotate: 33deg;
+    position: fixed;
+    padding: 1em;
+    margin: 0em;
+    z-index: 1;
+    width: 0; 
+    height: 0; 
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 20em solid #D9D9D9;
+    animation: shine 1.3s ease-out;
+
+}
+
+
+.tria5{
+    rotate: 200deg;
+    position: fixed;
+    padding: 4em;
+    margin: 0em;
+    z-index: 2;
+    width: 0; 
+    height: 0; 
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 26em solid #9c897d;
+    animation: shine 1.5s ease-out;
+}
+.tria6{
+    rotate: 200deg;
+    position: fixed;
+    padding: 3em;
+    margin: 0em;
+    z-index: 1;
+    width: 0; 
+    height: 0; 
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-bottom: 20em solid #9c897d;
+    animation: shine 1.5s ease-out;
 }
 
 @keyframes shine{
     0%{
-        transform: rotate(100deg);
+        transform: rotate(280deg);
     }
-
+    10%{
+        transform: rotate(180deg);
+    }
     100%{
-        transform: rotate(10deg);}
+        transform: rotate(0deg);}
 }
